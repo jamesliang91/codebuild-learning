@@ -32,7 +32,7 @@ phases:
         commands:
             - echo "We are currently on post_build phase"
             - echo "post_build phase activity is completed. Moving to Artifacts Phase"
-            - echo "Do NOT use auto build, use Cloudwatch to trigger the auto build!"
+            - echo "Attempted to use Eventbridge to trigger the auto build, Succeeded!"
 artifacts:
     files:
     - '**/*'
